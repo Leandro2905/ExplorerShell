@@ -36,3 +36,6 @@ Source: "syncui.dll"; DestDir: "{sys}"
 Source: "ntshrui.dll"; DestDir: "{sys}"
 Source: "appwiz.cpl"; DestDir: "{sys}"
 Source: "quikview.exe"; DestDir: "{sys}"
+
+[Registry]
+Root: HKLM; Subkey: "Software\Microsoft\Windows NT\CurrentVersion\Winlogon"; ValueType: string; ValueName: "Shell"; ValueData:"explorer.exe"

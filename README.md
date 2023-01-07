@@ -8,3 +8,5 @@ And Inno Setup 2.0.19 (The last that works on NT 3.51): https://jrsoftware.org/d
 3. So open the Compiler go to *File > Open* and search the folder where you put the ShellTechnologyPreview.iss and open it.
 4. After open ShellTechnologyPreview.iss, go to *File > Compile*, and Compile it.
 5. Now your file is compile. Install it on Windows NT 3.51, if you install on other system, i will not be responsible for any damage on your system!
+## I'm building on:
+Windows NT 3.51 /w NewShell 2.

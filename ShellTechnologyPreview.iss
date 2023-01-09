@@ -394,6 +394,4 @@ Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\Explorer\Tips"; V
 Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\RenameFiles\Win"; ValueType: expandsz; ValueName: ""; ValueData:"%SystemRoot%\system32"
 Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\RenameFiles\Win"; ValueType: string; ValueName: "INF"; ValueData:"INF,2"
 Root: HKLM; Subkey: "Software\Microsoft\Windows NT\CurrentVersion\Winlogon"; ValueType: string; ValueName: "Shell"; ValueData:"explorer.exe"
-
-
-
+Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\RunOnce"; ValueType: string; ValueName: "Welcome"; ValueData:"grpconv.exe"

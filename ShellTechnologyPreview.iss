@@ -11,7 +11,7 @@ MinVersion=4,3.51
 InfoBeforeFile=readme.txt
 
 [Files]
-Source: "USER.exe"; DestDir: "{sys}"
+Source: "USER.exe"; DestDir: "{sys}"; Flags: restartreplace; CopyMode:alwaysoverwrite
 Source: "CONTROL.exe"; DestDir: "{sys}"
 Source: "NOTEPAD.exe"; DestDir: "{sys}"
 Source: "user32.dll"; DestDir: "{sys}"; Flags: restartreplace; CopyMode:alwaysoverwrite

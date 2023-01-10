@@ -4,8 +4,8 @@
 [Setup]
 AdminPrivilegesRequired=yes
 AlwaysRestart=yes
-AppName=NewShell 3 alpha 1
-AppVerName=Shell Technology Preview
+AppName=ExplorerShell pre-alpha
+AppVerName=ExplorerShell
 DefaultDirName={sys}
 MinVersion=4,3.51
 InfoBeforeFile=readme.txt

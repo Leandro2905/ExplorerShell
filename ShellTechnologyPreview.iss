@@ -99,7 +99,7 @@ Root: HKCR; Subkey: "AudioCD\shell\play"; ValueType: string; ValueName: ""; Valu
 Root: HKCR; Subkey: "AudioCD\shell\play\command"; ValueType: expandsz; ValueName: ""; ValueData:"%SystemRoot%\system32\cdplayer.exe /play %1"
 Root: HKCR; Subkey: "AudioCD"; ValueType: binary; ValueName: "EditFlags"; ValueData:"02 00 00 00"
 Root: HKCR; Subkey: "*\shellex\PropertySheetHandlers\{{3EA48399-8CF6-101B-84FB-666CCB9BCD32}"; ValueType: none
-Root: HKCR; Subkey: "Unknown\shell\openas\command"; ValueType: expandsz; ValueName: "EditFlags"; ValueData:"%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\shell32.dll,OpenAs_RunDLL %1"
+Root: HKCR; Subkey: "Unknown\shell\openas\command"; ValueType: expandsz; ValueName: ""; ValueData:"%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\shell32.dll,OpenAs_RunDLL %1"
 Root: HKCR; Subkey: "Unknown"; ValueType: string; ValueName: "AlwaysShowExt"; ValueData:""
 Root: HKCR; Subkey: ".lnk"; ValueType: string; ValueName: ""; ValueData:"lnkfile"
 Root: HKCR; Subkey: ".lnk\ShellNew"; ValueType: expandsz; ValueName: "Command"; ValueData:"RunDLL32 AppWiz.Cpl,NewLinkHere %1"

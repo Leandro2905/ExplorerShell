@@ -10,6 +10,7 @@ DefaultDirName={sys}
 MinVersion=4,3.51
 InfoBeforeFile=readme.txt
 
+
 [Files]
 Source: "USER.exe"; DestDir: "{sys}"; Flags: restartreplace; CopyMode:alwaysoverwrite
 Source: "CONTROL.exe"; DestDir: "{sys}"
@@ -102,7 +103,7 @@ Root: HKCR; Subkey: "*\shellex\PropertySheetHandlers\{{3EA48399-8CF6-101B-84FB-6
 Root: HKCR; Subkey: "Unknown\shell\openas\command"; ValueType: expandsz; ValueName: ""; ValueData:"%SystemRoot%\system32\rundll32.exe %SystemRoot%\system32\shell32.dll,OpenAs_RunDLL %1"
 Root: HKCR; Subkey: "Unknown"; ValueType: string; ValueName: "AlwaysShowExt"; ValueData:""
 Root: HKCR; Subkey: ".lnk"; ValueType: string; ValueName: ""; ValueData:"lnkfile"
-Root: HKCR; Subkey: ".lnk\ShellNew"; ValueType: expandsz; ValueName: "Command"; ValueData:"RunDLL32 AppWiz.Cpl,NewLinkHere %1"
+Root: HKCR; Subkey: ".lnk\ShellNew"; ValueType: string; ValueName: "Command"; ValueData:"RunDLL32 AppWiz.Cpl,NewLinkHere %1"
 Root: HKCR; Subkey: "lnkfile"; ValueType: string; ValueName: ""; ValueData:"Shortcut"
 Root: HKCR; Subkey: "lnkfile"; ValueType: binary; ValueName: "EditFlags"; ValueData:"01 00 00 00"
 Root: HKCR; Subkey: "lnkfile"; ValueType: string; ValueName: "IsShortCut"; ValueData:""

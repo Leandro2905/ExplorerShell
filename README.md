@@ -7,6 +7,6 @@
 2. Before open the Compiler, download this master brand and put ExplorerShell.iss and Readme.txt on the same folder as the NewShell 2 Components.
 3. So open the Compiler go to *File > Open* and search the folder where you put the ExplorerShell.iss and open it.
 4. After open ExplorerShell.iss, go to *File > Compile*, and Compile it.
-5. Now your file is compile. Install it on Windows NT 3.51, if you install on other system, i will not be responsible for any damage on your system!
+5. Now your file is compiled. Install it on Windows NT 3.51, if you install on other system, i will not be responsible for any damage on your system!
 ## I'm building on:
 Windows NT 3.51 w/ NewShell 2.

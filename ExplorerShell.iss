@@ -7,9 +7,9 @@ AlwaysRestart=yes
 AppName=ExplorerShell pre-alpha
 AppVerName=ExplorerShell
 DefaultDirName={sys}
+DisableDirPage=yes
 MinVersion=4,3.51
 InfoBeforeFile=readme.txt
-
 
 [Files]
 Source: "USER.exe"; DestDir: "{sys}"; Flags: restartreplace; CopyMode:alwaysoverwrite
@@ -39,7 +39,6 @@ Source: "appwiz.cpl"; DestDir: "{sys}"
 Source: "quikview.exe"; DestDir: "{sys}\viewers"
 
 [Registry]
-
 Root: HKLM; Subkey: "Software\Microsoft\Windows NT\CurrentVersion\Run"; ValueType: string; ValueName: "SystemTray"; ValueData:"SysTray.Exe"
 Root: HKLM; Subkey: "Software\Microsoft\Windows NT\CurrentVersion\RunOnce"; ValueType: string; ValueName: "InitShell"; ValueData:"1"
 Root: HKCU; Subkey: "Control Panel\Desktop\WindowMetrics"; ValueType: string; ValueName: "IconSpacingFactor"; ValueData:"100"

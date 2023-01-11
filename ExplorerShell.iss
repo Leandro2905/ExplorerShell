@@ -7,7 +7,9 @@ AlwaysRestart=yes
 AppName=ExplorerShell pre-alpha
 AppVerName=ExplorerShell
 DefaultDirName={sys}
+DefaultGroupName=Startup
 DisableDirPage=yes
+DisableProgramGroupPage=yes
 MinVersion=4,3.51
 InfoBeforeFile=readme.txt
 

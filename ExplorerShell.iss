@@ -38,6 +38,7 @@ Source: "synceng.dll"; DestDir: "{sys}"
 Source: "syncui.dll"; DestDir: "{sys}"
 Source: "ntshrui.dll"; DestDir: "{sys}"
 Source: "appwiz.cpl"; DestDir: "{sys}"
+Source: "marlett.ttf"; DestDir: "{win}\system"
 Source: "quikview.exe"; DestDir: "{sys}\viewers"
 
 [Registry]

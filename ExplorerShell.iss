@@ -42,8 +42,8 @@ Source: "marlett.ttf"; DestDir: "{win}\system"
 Source: "quikview.exe"; DestDir: "{sys}\viewers"
 
 [Registry]
-Root: HKLM; Subkey: "Software\Microsoft\Windows NT\CurrentVersion\Run"; ValueType: string; ValueName: "SystemTray"; ValueData:"SysTray.Exe"
-Root: HKLM; Subkey: "Software\Microsoft\Windows NT\CurrentVersion\RunOnce"; ValueType: string; ValueName: "InitShell"; ValueData:"1"
+Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\Run"; ValueType: string; ValueName: "SystemTray"; ValueData:"SysTray.Exe"
+Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\RunOnce"; ValueType: string; ValueName: "InitShell"; ValueData:"1"
 Root: HKCU; Subkey: "Control Panel\Desktop\WindowMetrics"; ValueType: string; ValueName: "IconSpacingFactor"; ValueData:"100"
 Root: HKCU; Subkey: "Control Panel\Colors"; ValueType: string; ValueName: "InactiveTitle"; ValueData:"128 128 128"
 Root: HKCU; Subkey: "Control Panel\Colors"; ValueType: string; ValueName: "InactiveTitleText"; ValueData:"255 255 255"

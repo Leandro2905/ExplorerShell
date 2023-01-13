@@ -289,7 +289,7 @@ Root: HKCR; Subkey: "CLSID\{{208D2C60-3AEA-1069-A2D7-08002B30309D}\shell\find\dd
 Root: HKCR; Subkey: "CLSID\{{61E218E0-65D3-101B-9F08-061CEAC3D50D}"; ValueType: string; ValueName: ""; ValueData:"ShellFind"
 Root: HKCR; Subkey: "CLSID\{{61E218E0-65D3-101B-9F08-061CEAC3D50D}\InProcServer32"; ValueType: string; ValueName: ""; ValueData:"shell32.dll"
 Root: HKCR; Subkey: "CLSID\{{61E218E0-65D3-101B-9F08-061CEAC3D50D}\InProcServer32"; ValueType: string; ValueName: "ThreadingModel"; ValueData:"Apartment"
-Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\Explorer\FindExtensions\ShelFind"; ValueType: string; ValueName: ""; ValueData:"{{61E218E0-65D3-101B-9F08-061CEAC3D50D}"
+Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\Explorer\FindExtensions\ShellFind"; ValueType: string; ValueName: ""; ValueData:"{{61E218E0-65D3-101B-9F08-061CEAC3D50D}"
 Root: HKCR; Subkey: "CLSID\{{645FF040-5081-101B-9F08-00AA002F954E}"; ValueType: string; ValueName: ""; ValueData:"Recycle Bin"
 Root: HKCR; Subkey: "CLSID\{{645FF040-5081-101B-9F08-00AA002F954E}\InProcServer32"; ValueType: string; ValueName: ""; ValueData:"shell32.dll"
 Root: HKCR; Subkey: "CLSID\{{645FF040-5081-101B-9F08-00AA002F954E}\InProcServer32"; ValueType: string; ValueName: "ThreadingModel"; ValueData:"Apartment"

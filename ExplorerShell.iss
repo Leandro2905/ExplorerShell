@@ -16,7 +16,7 @@ InfoBeforeFile=readme.txt
 [Files]
 Source: "USER.exe"; DestDir: "{sys}"; Flags: restartreplace; CopyMode:alwaysoverwrite
 Source: "CONTROL.exe"; DestDir: "{sys}"
-Source: "NOTEPAD.exe"; DestDir: "{sys}"
+Source: "NOTEPAD.exe"; DestDir: "{sys}"; Flags: restartreplace; CopyMode:alwaysoverwrite
 Source: "user32.dll"; DestDir: "{sys}"; Flags: restartreplace; CopyMode:alwaysoverwrite
 Source: "kernel32.dll"; DestDir: "{sys}"; Flags: restartreplace; CopyMode:alwaysoverwrite
 Source: "winsrv.dll"; DestDir: "{sys}"; Flags: restartreplace; CopyMode:alwaysoverwrite
@@ -187,6 +187,11 @@ Root: HKCR; Subkey: "dllfile"; ValueType: string; ValueName: ""; ValueData:"Appl
 Root: HKCR; Subkey: "dllfile"; ValueType: string; ValueName: "AlwaysShowExt"; ValueData:""
 Root: HKCR; Subkey: "dllfile"; ValueType: binary; ValueName: "EditFlags"; ValueData:"01 00 00 00"
 Root: HKCR; Subkey: "dllfile\DefaultIcon"; ValueType: expandsz; ValueName: ""; ValueData:"%SystemRoot%\system32\shell32.dll,-154"
+Root: HKCR; Subkey: ".txt"; ValueType: string; ValueName: ""; ValueData:"txtfile"
+Root: HKCR; Subkey: "txtfile"; ValueType: string; ValueName: ""; ValueData:"Text Document"
+Root: HKCR; Subkey: "txtfile\DefaultIcon"; ValueType: expandsz; ValueName: ""; ValueData:"%SystemRoot%\system32\shell32.dll,-152"
+Root: HKCR; Subkey: "txtfile\shell\open\command"; ValueType: expandsz; ValueName: ""; ValueData:"%SystemRoot%\system32\NOTEPAD.EXE %1"
+Root: HKCR; Subkey: "txtfile\shell\print\command"; ValueType: expandsz; ValueName: ""; ValueData:"%SystemRoot%\system32\NOTEPAD.EXE /p %1"
 Root: HKCR; Subkey: ".ini"; ValueType: string; ValueName: ""; ValueData:"inifile"
 Root: HKCR; Subkey: "inifile"; ValueType: string; ValueName: ""; ValueData:"Configuration Settings"
 Root: HKCR; Subkey: "inifile\DefaultIcon"; ValueType: expandsz; ValueName: ""; ValueData:"%SystemRoot%\system32\shell32.dll,-151"
@@ -317,7 +322,7 @@ Root: HKCU; Subkey: "Software\Microsoft\Windows\CurrentVersion\GrpConv\MapGroups
 Root: HKCU; Subkey: "Software\Microsoft\Windows\CurrentVersion\GrpConv\MapGroups"; ValueType: string; ValueName: "Programs"; ValueData:"."
 Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\RunOnce"; ValueType: string; ValueName: "%SystemRoot%\system32"; ValueData:"rundll32.exe syncui.dll,Briefcase_Create"
 Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved"; ValueType: string; ValueName: "{{85BBD920-42A0-1069-A2E4-08002B30309D}"; ValueData:"Briefcase"
-Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved"; ValueType: string; ValueName: "{{3EA48300-8CF6-101B-84FB-666CCB9BCD32}"; ValueData:""
+Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved"; ValueType: string; ValueName: "{{3EA48300-8CF6-101B-84FB-666CCB9BCD32}"; ValueData:"OLE Docfile Property Page"
 Root: HKCR; Subkey: "CLSID\{{85BBD920-42A0-1069-A2E4-08002B30309D}"; ValueType: string; ValueName: ""; ValueData:"Briefcase"
 Root: HKCR; Subkey: "CLSID\{{85BBD920-42A0-1069-A2E4-08002B30309D}\InProcServer32"; ValueType: string; ValueName: ""; ValueData:"syncui.dll"
 Root: HKCR; Subkey: "CLSID\{{85BBD920-42A0-1069-A2E4-08002B30309D}\InProcServer32"; ValueType: string; ValueName: "ThreadingModel"; ValueData:"Apartment"

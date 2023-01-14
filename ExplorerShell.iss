@@ -112,7 +112,7 @@ Root: HKCR; Subkey: "lnkfile"; ValueType: string; ValueName: "IsShortcut"; Value
 Root: HKCR; Subkey: "lnkfile"; ValueType: string; ValueName: "NeverShowExt"; ValueData:""
 Root: HKCR; Subkey: "lnkfile\shellex\IconHandler"; ValueType: string; ValueName: ""; ValueData:"{{00021401-0000-0000-C000-000000000046}"
 Root: HKCR; Subkey: "lnkfile\shellex\DropHandler"; ValueType: string; ValueName: ""; ValueData:"{{00021401-0000-0000-C000-000000000046}"
-Root: HKCR; Subkey: "lnkfile\shellex\ContexetMenuHandlers\{{00021401-0000-0000-C000-000000000046}"; ValueType: none
+Root: HKCR; Subkey: "lnkfile\shellex\ContextMenuHandlers\{{00021401-0000-0000-C000-000000000046}"; ValueType: none
 Root: HKCR; Subkey: ".fnd"; ValueType: string; ValueName: ""; ValueData:"fndfile"
 Root: HKCR; Subkey: "fndfile"; ValueType: string; ValueName: ""; ValueData:"Saved Search"
 Root: HKCR; Subkey: "fndfile\DefaultIcon"; ValueType: expandsz; ValueName: ""; ValueData:"%SystemRoot%\system32\shell32.dll,42"

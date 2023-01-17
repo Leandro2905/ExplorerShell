@@ -4,7 +4,7 @@
 [Setup]
 AdminPrivilegesRequired=yes
 AlwaysRestart=yes
-AppName=ExplorerShell pre-alpha
+AppName=ExplorerShell alpha 0
 AppVerName=ExplorerShell
 DefaultDirName={sys}
 DefaultGroupName=Startup
@@ -12,6 +12,15 @@ DisableDirPage=yes
 DisableProgramGroupPage=yes
 MinVersion=4,3.51
 InfoBeforeFile=readme.txt
+
+[Types]
+Name: "full"; Description: "Full installation (recommended)"
+Name: "compact"; Description: "Compact installation"
+Name: "custom"; Description: "Custom installation"; Flags: iscustom
+
+[Components]
+Name: "main"; Description: "Main Files"; Types: full compact custom; Flags:fixed
+Name: "explorer"; Description: "Explorer as Default"; Types: full compact custom
 
 [Files]
 Source: "USER.exe"; DestDir: "{sys}"; Flags: restartreplace; CopyMode:alwaysoverwrite
@@ -401,5 +410,5 @@ Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\Explorer\Tips"; V
 Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\Explorer\Tips"; ValueType: string; ValueName: "49"; ValueData:"You can customize Windows NT in many ways. Don't hesitate to experiment!"
 Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\RenameFiles\Win"; ValueType: expandsz; ValueName: ""; ValueData:"%SystemRoot%\system32"
 Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\RenameFiles\Win"; ValueType: string; ValueName: "INF"; ValueData:"INF,2"
-Root: HKLM; Subkey: "Software\Microsoft\Windows NT\CurrentVersion\Winlogon"; ValueType: string; ValueName: "Shell"; ValueData:"explorer.exe"
-Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\RunOnce"; ValueType: string; ValueName: "Welcome"; ValueData:"grpconv.exe"
+Root: HKLM; Subkey: "Software\Microsoft\Windows NT\CurrentVersion\Winlogon"; ValueType: string; ValueName: "Shell"; ValueData:"explorer.exe"; Components: explorer
+Root: HKLM; Subkey: "Software\Microsoft\Windows\CurrentVersion\RunOnce"; ValueType: string; ValueName: "Welcome"; ValueData:"grpconv.exe"; Components: explorer

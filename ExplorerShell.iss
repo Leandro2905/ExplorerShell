@@ -19,8 +19,8 @@ Name: "compact"; Description: "Compact installation"
 Name: "custom"; Description: "Custom installation"; Flags: iscustom
 
 [Components]
-Name: "main"; Description: "Main Files"; Types: full compact custom; Flags:fixed
-Name: "explorer"; Description: "Explorer as Default"; Types: full compact custom
+Name: "main"; Description: "Main Files (Not Configured)"; Types: full compact custom; Flags:fixed
+Name: "explorer"; Description: "Explorer as Default"; Types: full compact
 
 [Files]
 Source: "USER.exe"; DestDir: "{sys}"; Flags: restartreplace; CopyMode:alwaysoverwrite
